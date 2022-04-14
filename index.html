@@ -5,52 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test_work</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Khula:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html" class="logo">logo</a>
-      <nav class="header_nav">
-        <ul>
-          <li class="nav_list">
-            <a href="./index.html" class="nav_link current">Home</a>
-          </li>
-          <li class="nav_list">
-            <a href="#about" class="nav_link">About Us</a>
-          </li>
-          <li class="nav_list">
-            <a href="#services" class="nav_link">Services</a>
-          </li>
-          <li class="nav_list">
-            <a href="" class="nav_link">Blogs</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header_button" type="button">Gift Finder</button>
+    <header class="header">
+      <div class="header_box container">
+        <a href="./index.html" class="logo">logo</a>
+        <nav class="header_nav">
+          <ul class="nav_list">
+            <li class="header_link_box">
+              <a href="./index.html" class="nav_link">Home</a>
+            </li>
+            <li class="header_link_box">
+              <a href="#about" class="nav_link">About Us</a>
+            </li>
+            <li class="header_link_box">
+              <a href="#services" class="nav_link">Services</a>
+            </li>
+            <li class="header_link_box">
+              <a href="#blog" class="nav_link">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header_button" type="button">Gift Finder</button>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero_title">Find a gift for your wife or girlfriend</h1>
-        <p class="hero_discription">
-          Struggling to find a gift for your wife or girlfriend? No problem!
-        </p>
-        <button class="hero_button" type="button">Find gift now</button>
-        <img src="./img/hero.jpg" alt="hero" />
+        <div class="hero_box container">
+          <div class="hero_box_list discription_hero">
+            <h1 class="discription_hero_margin hero_title">
+              Find a gift for your wife or girlfriend
+            </h1>
+            <p class="discription_hero_margin hero_discription">
+              Struggling to find a gift for your wife or girlfriend? No problem!
+            </p>
+            <button class="discription_hero_margin hero_button" type="button">
+              Find gift now
+            </button>
+          </div>
+          <div class="hero_box_list hero_img">
+            <img src="./img/hero.jpg" alt="hero" />
+          </div>
+        </div>
       </section>
       <section class="about" id="about">
-        <img src="./img/thanks.jpg" alt="about" />
-        <h2>How we work</h2>
-        <p>
-          We’ve actually already asked hundreds of women what they want, and
-          made a database with the results. All you have to do is take our short
-          survey that only takes seconds, and our proprietary algorithm will
-          match you with a few perfect gift options.
-        </p>
-        <a href="" class="more">Learn More</a>
+        <div class="about_box container">
+          <div class="about_box_list about_img">
+            <img src="./img/thanks.jpg" alt="about" />
+          </div>
+          <div class="about_box_list about_discription">
+            <h2 class="about_title about_disc_margin">How we work</h2>
+            <p class="discription_about about_disc_margin">
+              We’ve actually already asked hundreds of women what they want, and
+              made a database with the results. All you have to do is take our
+              short survey that only takes seconds, and our proprietary
+              algorithm will match you with a few perfect gift options.
+            </p>
+            <a href="" class="more about_disc_margin">Learn More</a>
+          </div>
+        </div>
       </section>
       <section class="gifts">
         <h2 class="gifts_title">Gifts for all Occasions</h2>
@@ -104,7 +126,7 @@
           </li>
         </ul>
       </section>
-      <section class="blog">
+      <section class="blog" id="blog">
         <h2 class="blog_title">Our Best Blogs Ever</h2>
         <p class="blog_discription">
           “Try our blog to find the best tips and tricks to select your gift”
@@ -152,6 +174,68 @@
         </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <nav class="footer_nav">
+        <ul class="footer_nav_list">
+          <li class="footer_nav_item">
+            <a href="./index.html" class="footer_nav_link">Home</a>
+          </li>
+          <li class="footer_nav_item">
+            <a href="#about" class="footer_nav_link">About</a>
+          </li>
+          <li class="footer_nav_item">
+            <a href="./index.html" class="footer_nav_link">logo</a>
+          </li>
+          <li class="footer_nav_item">
+            <a href="#services" class="footer_nav_link">Service</a>
+          </li>
+          <li class="footer_nav_item">
+            <a href="#blog" class="footer_nav_link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <ul class="social_links">
+        <li class="social_block">
+          <a href="" class="social_link">
+            <svg class="social_svg">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social_block">
+          <a href="" class="social_link">
+            <svg class="social_svg">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social_block">
+          <a href="" class="social_link">
+            <svg class="social_svg">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social_block">
+          <a href="" class="social_link">
+            <svg class="social_svg">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social_block">
+          <a href="" class="social_link">
+            <svg class="social_svg">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom_footer">
+        <span class="bottom_footer_span">© 2010 — 2020</span
+        ><span class="bottom_footer_span">Privacy — Terms</span>
+      </div>
+    </footer>
   </body>
 </html>
