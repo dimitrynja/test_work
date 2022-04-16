@@ -52,7 +52,7 @@ summary {
 }
 
 .container {
-  width: 1440px;
+  width: 1480px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -381,4 +381,79 @@ summary {
 .article_summary {
   font-size: 14px;
   line-height: 140.62%;
+}
+/*-----------------------------------FOOTER---------------------------------------*/
+.footer {
+  padding-top: 106px;
+  padding-bottom: 35px;
+  background-color: #fafafa;
+}
+.footer_nav_list {
+  display: flex;
+  align-items: center;
+}
+.social_link {
+  padding-bottom: 56px;
+  padding-top: 56px;
+}
+.footer_nav_link {
+  padding-bottom: 43px;
+  padding-top: 43px;
+}
+.footer_nav_link.logo {
+  font-family: "Homemade Apple";
+  font-size: 18px;
+  line-height: 2;
+
+  color: var(--botton_color);
+  margin-left: 141px;
+  margin-right: 141px;
+}
+.footer_nav {
+  margin-left: 406px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56 px;
+  border-bottom: 1px solid #000;
+}
+.footer_nav_item {
+  font-size: 14px;
+  line-height: 140.62%;
+}
+.footer_nav_item:nth-child(1) {
+  margin-left: 186px;
+}
+.footer_nav_item:nth-child(2) {
+  margin-left: 81px;
+}
+.footer_nav_item:nth-child(5) {
+  margin-left: 54px;
+}
+.footer .social_links {
+  display: flex;
+  align-items: center;
+}
+.social_svg {
+  width: 38px;
+  height: 38px;
+}
+.social_block:nth-child(n + 2) {
+  margin-left: 26px;
+}
+.footer .social_links {
+  margin-left: 573px;
+  margin-right: 573px;
+}
+.bottom_footer {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+}
+.bottom_footer_span {
+  font-size: 14px;
+  line-height: 140.62%;
+}
+.bottom_footer_span:nth-child(n + 2) {
+  margin-left: 14px;
 }
